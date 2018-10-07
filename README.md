@@ -24,4 +24,4 @@ Repository for scraping
 
 ## Author
 
-[tcnksm](https://github.com/tcnksm)
+[Ryuichi1208](https://github.com/)
