@@ -28,6 +28,7 @@ def read_conf():
 
 # @param flg True:ブラウザ描写する
 def get_driver(flg):
+
     options = Options()
     options.set_headless(flg)
     driver = webdriver.Chrome()
