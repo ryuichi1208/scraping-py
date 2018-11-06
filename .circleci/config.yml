@@ -1,17 +1,12 @@
 version: 2
 jobs:
-    build:
-        working_directory: ~/blog.stormcat.io
-            machine: true
-            steps:
-                - checkout
-                - run:
-                    name: install hugo
-                    command: go get -v github.com/gohugoio/hugo 
-                - run:
-                    name: install pygments
-                    command: pip install pygments
-                - run:
-                    name: build hugo
-                    pwd: blog/
-                    command: hugo -t casper
+  build:
+    docker:
+      - image: python:3
+
+  steps:
+    - checkout
+    - run: apt-get update && apt-get install -y libgmp3-dev
+    - run:
+      name: Install dependencies
+      command: pip install -r requirements.txt
