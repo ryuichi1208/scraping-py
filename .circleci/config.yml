@@ -1,8 +1,17 @@
 version: 2
 jobs:
     build:
-        docker:
-            - image: circleci/golang:1.9.2
-                steps:
-                    - checkout
-                    - run: echo 'Hello world!'
+        working_directory: ~/blog.stormcat.io
+            machine: true
+            steps:
+                - checkout
+                - run:
+                    name: install hugo
+                    command: go get -v github.com/gohugoio/hugo 
+                - run:
+                    name: install pygments
+                    command: pip install pygments
+                - run:
+                    name: build hugo
+                    pwd: blog/
+                    command: hugo -t casper
