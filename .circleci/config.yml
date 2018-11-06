@@ -9,4 +9,4 @@ jobs:
       - run: apt-get update && apt-get install -y libgmp3-dev
       - run:
           name: Install dependencies
-          command: pip install -r requirements.txt
+          command: echo "hello circle"
