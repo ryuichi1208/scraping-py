@@ -8,6 +8,7 @@ manabi = "http://b.hatena.ne.jp/hotentry/knowledge.rss"
 kurashi = "http://b.hatena.ne.jp/hotentry/life.rss"
 yononaka = "http://b.hatena.ne.jp/hotentry/social.rss"
 
+# レスポンス
 rss = [it, manabi, kurashi, yononaka]
 
 hotentry = []
