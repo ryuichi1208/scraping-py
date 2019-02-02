@@ -24,4 +24,4 @@ Repository for scraping
 
 ## Author
 
-[Ryuichi1208](https://github.com/)
+[Ryuichi1208](https://github.com/ryuichi1208)
