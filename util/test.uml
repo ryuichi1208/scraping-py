@@ -1,0 +1,16 @@
+@startuml
+
+participant "cron" as A
+participant "バッチ" as B
+database "DB" as C
+participant "STF" as D
+participant "CDN" as E
+
+A -> B: 実行
+B -> C: データ取得
+B -> B: データチェック
+B -> D: HTTP DELETE
+B -> E: パージ処理
+E -[#0000FF]-> B: 終了ステータス
+B -> C: データ更新
+@enduml
