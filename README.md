@@ -1,22 +1,6 @@
-Name
-====
-
-Overview
-
 ## Description
-Repository for scraping
 
-## Demo
-
-## VS.
-
-## Requirement
-
-## Usage
-
-## Install
-
-## Contribution
+スクレイピング以外にもQiitaやブログ記事からのソースへのリンクなどを置いておく場所
 
 ## Licence
 
