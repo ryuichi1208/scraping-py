@@ -1,6 +1,8 @@
 ## Description
 
-Qiitaやブログ、Twitterなどから参照する先のコードを管理しておくリポジトリ(基本Gistからの移行)。
+Qiita、ブログ、Twitterなどでコードを共有する際に使用するリポジトリ。
+
+Gistから移行してテスト運用中。
 
 ## Licence
 
